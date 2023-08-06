@@ -1,0 +1,25 @@
+{
+    "Employeeset":[
+        {
+            "EmployeeID": "04",
+            "Name": "Pratibha",
+            "Department":"ABAP",
+            "Designation": "Software Engineer",
+            "Salary": "70000"
+        },
+        {
+        "EmployeeID": "05",
+        "Name": "Meghna",
+        "Department":"ABAP",
+        "Designation": "Senior Software Engineer",
+        "Salary": "80000"
+    },
+    {
+        "EmployeeID": "06",
+        "Name": "Gautam",
+        "Department":"ABAP",
+        "Designation": "Senior Software Engineer",
+        "Salary": "80000"
+    }
+    ]
+}

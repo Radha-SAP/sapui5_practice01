@@ -1,0 +1,17 @@
+<mvc:View controllerName="ar.com.projectlistformatter.controller.InvoicesList"
+      xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m">
+	<Shell id="_IDGenShell1">
+	<App id="_IDGenApp1">
+	<pages>
+	<Page id="page" title="{i18n>title}">
+	<content>
+		<mvc:XMLView id="_IDGenXMLView1" viewName="ar.com.projectlistformatter.view.HelloPanel"/>
+		<mvc:XMLView id="_IDGenXMLView2" viewName="ar.com.projectlistformatter.view.InvoicesList"/>		
+		
+		</content>
+		</Page>
+		</pages>
+		</App>
+		</Shell>
+		</mvc:View>

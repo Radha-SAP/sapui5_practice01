@@ -1,0 +1,17 @@
+<mvc:View controllerName="ar.com.projectnorthwind3.controller.Main"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m">
+    <Page id="page" title="{i18n>title}">
+        <content>
+          <VBox id="_IDGenVBox1">
+        <HBox id="_IDGenHBox1">
+        </HBox>
+        <Label id="_IDGenLabel1" text="First Name"/>
+        <Input id="_IDGenInput1" value="" />
+        <Label id="_IDGenLabel2" text="Last Name"/>
+        <Input id="_IDGenInput2" value="" />
+        <Button id="-btid2" text="Navigate" press="onNavigateClick"/>
+        </VBox>
+        </content>
+    </Page>
+</mvc:View>

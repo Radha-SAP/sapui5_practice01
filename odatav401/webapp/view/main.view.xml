@@ -1,0 +1,92 @@
+<mvc:View
+    controllerName="ar.com.odatav401.controller.main"
+    xmlns:mvc="sap.ui.core.mvc"
+    displayBlock="true"
+    xmlns="sap.m"
+>
+    <Page
+        id="page"
+        title="{i18n>title}"
+    >
+        <content>
+            <VBox id="businessPartnerForm">
+                <Label
+                    id="_IDGenLabel1"
+                    text="CardCode"
+                />
+                <Input
+                    id="CardCode"
+                    value="{CardCode}"
+                />
+
+                <Label
+                    id="_IDGenLabel2"
+                    text="CardName"
+                />
+                <Input
+                    id="CardName"
+                    value="{CardName}"
+                />
+
+                <Label
+                    id="_IDGenLabel3"
+                    text="CardType"
+                />
+                <Input
+                    id="CardType"
+                    value="{CardType}"
+                />
+
+                <Label
+                    id="_IDGenLabel4"
+                    text="GroupCode"
+                />
+                <Input
+                    id="GroupCode"
+                    value="{GroupCode}"
+                />
+
+                <Label
+                    id="_IDGenLabel5"
+                    text="Address"
+                />
+                <Input
+                    id="Address"
+                    value="{Address}"
+                />
+
+                <Label
+                    id="_IDGenLabel6"
+                    text="ZipCode"
+                />
+                <Input
+                    id="ZipCode"
+                    value="{ZipCode}"
+                />
+
+                <Label
+                    id="_IDGenLabel7"
+                    text="MailAddress"
+                />
+                <Input
+                    id="MailAddress"
+                    value="{MailAddress}"
+                />
+
+                <Label
+                    id="_IDGenLabel8"
+                    text="MailZipCode"
+                />
+                <Input
+                    id="MailZipCode"
+                    value="{MailZipCode}"
+                />
+            </VBox>
+            <Button
+                id="_IDGenButton1"
+                text="Save"
+                press="onSavePress"
+            />
+        </content>
+    </Page>
+</mvc:View>

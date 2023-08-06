@@ -1,0 +1,27 @@
+<mvc:View controllerName="ar.com.projectlistformatter.controller.HelloPanel"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m">
+  
+   <Panel id="_IDGenPanel2" headerText="{i18n>hellopanelTitle}" class="sapUiResponsiveMargin" width="auto">
+   <content>
+   <Button 
+   id="helloDialogButton"
+   text="{i18n>openDialogButtonText}"
+   press=".onOpenDialog"
+   class="sapUiSmallMarginEnd"/>
+   <Button 
+    text="{i18n>showHelloButtonText}" id="idHelloButton"
+    press="onShowHello"
+    class="sapUiSmallMarginEnd"/>
+
+    <Input id="idHelloInput"
+    value="{helloModel>/recipient/name}"
+    valueLiveUpdate="true"
+    width="60%"/>
+
+    <FormattedText id="_IDGenFormattedText1"
+    htmlText="Hello {helloModel>/recipient/name}"
+    class="sapUiSmallMargin"/>
+    </content>
+    </Panel>
+    </mvc:View>

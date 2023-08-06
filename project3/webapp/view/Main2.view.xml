@@ -1,0 +1,13 @@
+<mvc:View controllerName="ar.com.project3.controller.Main2"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m">
+    <Page id="page" title="{i18n>title}">
+    <content>
+    <Button id="helloDialogButton"
+    icon="sap-icon://world" 
+    text="{i18n>openDialogButtonText}"
+    press="onOpenDialog"
+    class="sapUiSmallMarginEnd"/>
+        </content >
+    </Page>
+</mvc:View>

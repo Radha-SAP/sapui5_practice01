@@ -1,0 +1,50 @@
+<mvc:View controllerName="ar.com.jsonproject2.controller.Main"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m">
+    <Page id="page" title="{i18n>title}">
+                 <content>
+            <Panel id="_IDGenPanel1">
+                <!-- <Table id="_IDGenTable1" items="{/Invoices}"> -->
+                 <Table id="_IDGenTable1" items="{employeeList1>/Employeeset}"> 
+                <!-- Header information -->
+                <headerToolbar>
+                    <OverflowToolbar id="_IDGenOverflowToolbar1" >
+                    <Text id="_IDGenText13" text="Employees" />
+                    <ToolbarSpacer id="_IDGenToolbarSpacer1"  >                    
+                   </ToolbarSpacer>
+                      <Button id="_IDGenButton1" text="{i18n>edit}" press="onEdit"/>
+                      <Button id="_IDGenButton2" text="{i18n>create}" press="onCreate"/> 
+                    </OverflowToolbar>
+                </headerToolbar>
+                <!-- Column information -->
+                <columns>
+                   <Column id="_IDGenColumn1" >
+                   <Text id="_IDGenText1" text="{i18n>EmployeeID}" />
+                   </Column>
+                   <Column id="_IDGenColumn2" >
+                   <Text id="_IDGenText2" text="{i18n>Name}" />
+                   </Column>   
+                   <Column id="_IDGenColumn3" >
+                   <Text id="_IDGenText_3" text="{i18n>Department}" />
+                   </Column>  
+                   <Column id="_IDGenColumn4" >
+                   <Text id="_IDGenText4" text="{i18n>Designation}" />
+                   </Column>  
+                   <Column id="_IDGenColumn5" >
+                   <Text id="_IDGenText5" text="{i18n>Salary}" />
+                   </Column>                                                                                               
+                </columns>
+                <items>
+                <ColumnListItem id="_IDGenColumnListItem1" >             
+               <Text id="_IDGenText7" text="{employeeList1>EmployeeID}" />
+               <Text id="_IDGenText8" text="{employeeList1>Name}" />
+               <Text id="_IDGenText9" text="{employeeList1>Department}" />
+               <Text id="_IDGenText10" text="{employeeList1>Designation}" />
+               <Text id="_IDGenText11" text="{employeeList1>Salary}" />            
+                </ColumnListItem>
+                </items>
+                </Table>
+            </Panel>
+        </content>
+    </Page>
+</mvc:View>

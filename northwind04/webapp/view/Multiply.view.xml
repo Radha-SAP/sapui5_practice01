@@ -1,0 +1,10 @@
+<mvc:View controllerName="ar.com.northwind04.controller.Multiply"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m">
+    <Page id="page" title="{i18n>title}">
+        <content>
+            <Text id="IdText" text = "" />
+
+        </content>
+    </Page>
+</mvc:View>

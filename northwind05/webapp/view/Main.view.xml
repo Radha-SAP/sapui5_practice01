@@ -1,0 +1,20 @@
+<mvc:View controllerName="ar.com.northwind05.controller.Main"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m">
+    <Page id="page" title="{i18n>title}">
+        <content>
+         <VBox id="IDGenVBox1" >
+        <Label id="IDGenLabel1" text="Number 1"/>
+        <Input id="IDGenInput1" value=""/>
+        <Label id="IDGenLabel2" text="Number 2"/>
+        <Input id="IDGenInput2" value=""/>
+        <HBox id="IDGenHBox1">
+        <Button id="bt1" text="Add" press="onAdd"/>
+        <Button id="bt2" text="Substract" press="onSubstract"/>
+        <Button id="bt3" text="Multiply" press="onMultiply"/>
+        <Button id="bt4" text="Divide" press="onDivide"/>
+        </HBox>
+        </VBox>
+    </content>
+    </Page>
+</mvc:View>

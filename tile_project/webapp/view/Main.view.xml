@@ -1,0 +1,11 @@
+<mvc:View controllerName="ar.com.tileproject.controller.Main"
+    xmlns:mvc="sap.ui.core.mvc" 
+	xmlns:form="sap.ui.layout.form"
+    displayBlock="true"
+    xmlns="sap.m">
+    	<form:SimpleForm id="_IDGenSimpleForm1" editable="true" width="40rem">
+		<Label id="_IDGenLabel1" text="Loading time" />
+		<Input id="loadingMinSeconds" width="8rem" type="Number" description="seconds" value="-1"/>
+		<Button id="_IDGenButton1" text="Start loading" type="Emphasized" press="onFormSubmit"/>
+	</form:SimpleForm>
+</mvc:View>

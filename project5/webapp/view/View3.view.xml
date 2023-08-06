@@ -1,0 +1,14 @@
+<mvc:View controllerName="radha.com.project5.controller.View3"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m">
+    <Page id="page" title="{i18n>title}">
+        <content>
+        <Button id="_IDGenButton1"
+        icon="sap-icon://alert"
+        text="({=${message>/}.length})Message"
+        visible="{=${message>/}.length>0}"
+        type="Emphasized"
+        press="onMessagePopoverPress"/>
+        </content>
+    </Page>
+</mvc:View>

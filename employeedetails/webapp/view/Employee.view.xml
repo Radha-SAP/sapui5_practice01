@@ -1,0 +1,40 @@
+<mvc:View controllerName="ar.com.employeedetails.controller.Employee"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m">
+    <Page id="page" title="{i18n>title}">
+        <content>
+                    <Panel id="_IDGenPanel1">
+                    <Table id="_IDGenTable1" >
+                     <headerToolbar>
+                    <OverflowToolbar id="_IDGenOverflowToolbar1">
+                    <Title id="_IDGenTitle1" text="{employees}" level="H3"/>
+                    <ToolbarSpacer id="_IDGenToolbarSpacer1"/>
+                    <layoutData>
+                    <OverflowToolbarLayoutData id="_IDGenOverflowToolbarLayoutData1" maxWidth="200px" priority="NeverOverflow"></OverflowToolbarLayoutData>
+                    </layoutData>
+                   </OverflowToolbar>
+                    </headerToolbar>
+                     <columns>
+                        <Column id="_IDGenColumn1">
+                            <Text id="_IDGenText1" text="{i18n>EmployeeID}" />
+                        </Column>
+                         <Column id="_IDGenColumn2">
+                            <Text id="_IDGenText2" text="{i18n>Name}" />
+                        </Column>
+                         <Column id="_IDGenColumn3">
+                            <Text id="_IDGenText3" text="{i18n>Department}" />
+                        </Column>
+                         <Column id="_IDGenColumn4">
+                            <Text id="_IDGenText4" text="{i18n>Designation}" />
+                        </Column>
+                         <Column id="_IDGenColumn5">
+                            <Text id="_IDGenText5" text="{i18n>Salary}" />
+                        </Column>
+                        
+                        </columns>
+                    </Table>
+                    </Panel>
+
+        </content>
+    </Page>
+</mvc:View>

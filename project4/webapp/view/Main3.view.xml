@@ -1,0 +1,12 @@
+<mvc:View controllerName="anu.com.project4.controller.Main3"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m">
+    <Page id="page" title="{i18n>title}">
+       <content>
+      <Button id="employeedetailsDialogButton"
+    text="{i18n>openEmployeeDetails}"
+    press="onOpenDialog"
+    class="sapUiSmallMarginEnd"/>
+    </content >
+    </Page>
+</mvc:View>

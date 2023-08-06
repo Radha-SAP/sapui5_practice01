@@ -1,0 +1,10 @@
+<mvc:View controllerName="ar.com.projectnorthwind3.controller.Details"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m">
+    <Page id="page" title="Welcome to routing ui5">
+        <content>
+         <Text id="IdText" text = "" />
+
+        </content>
+    </Page>
+</mvc:View>

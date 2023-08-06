@@ -1,0 +1,61 @@
+<mvc:View controllerName="ar.com.customerproject.controller.View"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns:core="sap.ui.core"
+    xmlns="sap.m">
+    <Page id="page" title="{i18n>title}">
+        <content>
+        
+        <ComboBox id="_IDGenComboBox1" showSecondaryValues= "true" items="{
+                    path: '/U_CUSTOMERSUBGROUP',
+                    sorter: { path: 'Code' }
+                }" change=".onHandleChange">
+                <core:ListItem id="_IDGenListItem1" key="{Code}" text="{Code}" additionalText = "{Name}"/>
+            </ComboBox>
+            <Text id="_IDGenText15" text=" " />
+            <DatePicker id="DP1" placeholder="Enter Date" change="handleChange" class="sapUiSmallMarginBottom"/>
+        <Table id="_IDGenTable1" items="{Order1>/Orders}" >
+        
+        <columns>
+       
+        <Column id="_IDGenColumn1" >
+        <Text id="_IDGenText1" text="ItemCode">
+        </Text>
+        </Column>
+        <Column id="_IDGenColumn2" >
+        <Text id="_IDGenText2" text="ItemName">
+        </Text>
+        </Column>
+        <Column id="_IDGenColumn3" >
+        <Text id="_IDGenText3" text="Item Quantity">
+        </Text>
+        </Column>
+        <Column id="_IDGenColumn4" >
+        <Text id="_IDGenText4" text="Item Price">
+        </Text>
+        </Column>
+        </columns>
+        <items>
+        <ColumnListItem id="_IDGenColumnListItem1" >
+        
+         
+        <Text id="_IDGenText5" text="{Order1>ItemCode}"/>
+        
+        
+        
+        <Text id="_IDGenText6" text="{Order1>ItemName}"/>
+        
+        
+        <Text id="_IDGenText7" text="{Order1>ItemQuantity}"/>
+        
+        
+        <Text id="_IDGenText8" text="{Order1>ItemPrice}"/>
+        
+        
+        </ColumnListItem>
+        </items>
+        </Table>
+        <Button id="btn1" text="Add New Record" press="onPress" enabled="true">
+        </Button>
+        </content>
+    </Page>
+</mvc:View>

@@ -1,0 +1,9 @@
+<mvc:View controllerName="ar.com.projectnorthwind02.controller.FirstView"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m">
+    <Page id="page" title="{i18n>title}">
+        <content>
+ 	    <Button id="_IDGenButton1" text= "Navigate to Main View" type="Emphasized" press="onNavigate" />
+        </content>
+    </Page>
+</mvc:View>
